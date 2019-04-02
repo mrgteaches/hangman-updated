@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Spanish Hangman</title>
+    
+    <link rel="stylesheet" href="assets/css/reset.css"/>
+    <link rel="stylesheet" href="assets/css/style.css"/>
+    <!--<link rel="stylesheet" href="assets/css/jquery.accent-keyboard.css"/>-->
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+
+
+    
+  </head>
+
+  <body>
+    <div id="title">Hangman: Spanish Food Terms!</div>
+
+      <div id="stats">
+        <h2>Press any letter to make a guess!</h2>
+        <h3>Wins:</h3>
+        <h4 id="totalWins"></h4>
+        <h3>Current Word:</h3>
+        <h4 id="currentWord"></h4>
+        <h3>Guesses Remaining:</h3>
+        <h4 id="remainingGuesses"></h4>
+        <h3>Letters Guessed:</h3>
+        <h3 id="guessedLetters"></h3>
+
+      </div>
+
+      <div id="display"></div>        
+      <div id="buttons"></div>
+      <!-- <button id="clear">clear</button> -->
+
+
+      <div id="messages">
+          <h1 id="gameover">GAME OVER!</h1>
+          <h1 id="youwin">YOU WIN!</h1>
+          <h3 id="tryAgain">Play again!</h3>
+      </div>
+
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha384-xBuQ/xzmlsLoJpyjoggmTEz8OWUFM0/RC5BsqQBDX2v5cMvDHcMakNTNrHIW2I5f"
+      crossorigin="anonymous">
+  </script>
+     <!-- <script src="assets/javascript/jquery.accent-keyboard.js" type="text/javascript"></script>-->
+      <script src="assets/javascript/game.js" type="text/javascript"></script>
+
+    
+  </body>
+
+</html>

@@ -1,0 +1,96 @@
+#gameover, #tryAgain, #youwin {
+    display: none;
+    text-align: center;
+    font-size: 28px;
+}
+
+h1 {
+    font-weight: 300;
+    color: red;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 28px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 20px;
+}
+
+h3 {
+    text-align: center;
+    font-size: 24px;
+    padding: 20px;
+}
+
+#totalWins, #currentWord,
+#remainingGuesses, #guessedLetters  {
+    text-align: center;
+    font-size: 24px;
+    color: red;
+    letter-spacing: 4px;
+}
+
+#title {
+    text-align: center;
+    font-size: 54px;
+    color: white;
+    margin: 20px;
+    font-family: "Sofia";
+}
+
+#stats {
+    margin: auto;
+    width: 50%;
+    background: white;
+}
+
+#messages {
+    margin: auto;
+    margin-top: 20px;
+    width: 50%;
+    background: white;
+}
+
+body {
+    background-image: url("../images/chili.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#buttons {
+    text-align: center;
+    margin: auto;
+    width: 75%;
+}
+
+button {
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    background-color: white;
+}
+
+#clear {
+    text-align: center;
+}
+
+
+
+@media only screen and (max-width: 980px) {
+    #stats {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+       #stats {
+            width: 90%;
+       }
+}
+
+@media only screen and (max-width: 640px) {
+        #stats {
+            width: 90%;
+        }
+}
