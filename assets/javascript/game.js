@@ -137,7 +137,9 @@ function checkWin() {
 
 $(document).ready(function() {
 
-        var letters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "_"];
+    //Creates the buttons, assigns each a letter as an attribute, includes Spanish accents
+
+        var letters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "á", "é", "í", "ó", "ú", "ñ", "ü"];
 
 
     for (var i = 0; i < letters.length; i++) {
@@ -153,10 +155,10 @@ $(document).ready(function() {
       $("#buttons").append(letterBtn);
     }
 
+    //Runs when a button is clicked, gets attribute of button and uses it to make a guess
     $(".letter-button").on("click", function() {
-        if(event.keyCode >= 65 && event.keyCode <= 90) {
-            makeGuess(event.key.toLowerCase());
-    }
+        var letterGuess = this.getAttribute("data-letter");
+        makeGuess(letterGuess);
         })
 
 });
